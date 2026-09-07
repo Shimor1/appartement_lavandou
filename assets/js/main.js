@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const galleries = {
     studio: [
       { src: "assets/images/studio-balcon-mer.jpg", caption: "Balcon privatif avec vue sur la mer Méditerranée" },
-      { src: "assets/images/studio-sejour.jpg", caption: "Séjour lumineux avec canapé-lit double, TV et espace repas" },
+      { src: "assets/images/studio-sejour.jpg", caption: "Séjour lumineux avec lit gigogne 2 personnes (160cm), TV et espace repas" },
       { src: "assets/images/studio-cuisine.jpg", caption: "Kitchenette équipée avec plaques et four micro-ondes" },
       { src: "assets/images/studio-cabine.jpg", caption: "Coin cabine fermé avec lits superposés et lave-linge" },
       { src: "assets/images/studio-salle-eau.jpg", caption: "Salle d'eau moderne avec cabine de douche et lavabo" }
@@ -220,7 +220,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const prop = document.getElementById("inquiry-property")?.value || "Non spécifié";
     const arrival = document.getElementById("inquiry-arrival")?.value || "À définir";
     const departure = document.getElementById("inquiry-departure")?.value || "À définir";
-    const guests = document.getElementById("inquiry-guests")?.value || "Non spécifié";
+    const adults = document.getElementById("inquiry-adults")?.value || "1";
+    const children = document.getElementById("inquiry-children")?.value || "0";
+    const hasPet = document.getElementById("inquiry-pet")?.checked ? "Oui" : "Non";
     const message = document.getElementById("inquiry-message")?.value.trim() || "";
 
     const text = 
@@ -233,7 +235,9 @@ Je souhaiterais vous contacter pour une demande de séjour chez TribuDudu (Le La
 - Téléphone : ${phone}
 - Logement souhaité : ${prop}
 - Dates souhaitées : Du ${arrival} au ${departure}
-- Nombre de personnes : ${guests}
+- Nombre d'adultes : ${adults}
+- Nombre d'enfants : ${children}
+- Voyage avec un animal : ${hasPet}
 
 Message :
 ${message}
