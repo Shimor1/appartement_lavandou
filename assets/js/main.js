@@ -280,26 +280,44 @@ ${name}`;
   // 6. Leaflet Interactive Map
   const mapElement = document.getElementById("map");
   if (mapElement && typeof L !== "undefined") {
-    // Exact GPS coordinates of 18 Avenue du Président Auriol, 83980 Le Lavandou
-    const lavandouCoords = [43.132913794713275, 6.364978816277791];
+    // Exact GPS coordinates
+    const appartCoords = [43.132913794713275, 6.364978816277791];
+    const studiosCoords = [43.13335678677583, 6.364637039093491];
+    const centerCoords = [43.133135, 6.364808];
+
     const map = L.map("map", {
       scrollWheelZoom: false
-    }).setView(lavandouCoords, 16);
+    }).setView(centerCoords, 17);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
       attribution: '© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    const marker = L.marker(lavandouCoords).addTo(map);
-    marker.bindPopup(`
+    // Marker 1: Appartement T3
+    const markerAppart = L.marker(appartCoords).addTo(map);
+    markerAppart.bindPopup(`
       <div style="font-family: var(--font-sans); font-size: 0.85rem; line-height: 1.4; padding: 4px;">
-        <strong style="color: #0f2744; font-size: 0.95rem;">TribuDudu Locations</strong><br>
+        <strong style="color: #0f2744; font-size: 0.95rem;">Appartement T3</strong><br>
         Résidence Les Horizons<br>
         18 Avenue du Président Auriol<br>
         83980 Le Lavandou<br>
         <span style="color: #c29543; font-weight: 600;">🏖️ Accès direct plage</span>
       </div>
-    `).openPopup();
+    `);
+    markerAppart.bindTooltip("Appartement T3", { permanent: true, direction: "top", offset: [0, -10] });
+
+    // Marker 2: Studios
+    const markerStudios = L.marker(studiosCoords).addTo(map);
+    markerStudios.bindPopup(`
+      <div style="font-family: var(--font-sans); font-size: 0.85rem; line-height: 1.4; padding: 4px;">
+        <strong style="color: #0f2744; font-size: 0.95rem;">Studios</strong><br>
+        Résidence Les Horizons<br>
+        18 Avenue du Président Auriol<br>
+        83980 Le Lavandou<br>
+        <span style="color: #c29543; font-weight: 600;">🏖️ Accès direct plage</span>
+      </div>
+    `);
+    markerStudios.bindTooltip("Studios", { permanent: true, direction: "top", offset: [0, -10] });
   }
 });

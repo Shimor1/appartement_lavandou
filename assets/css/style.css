@@ -1235,6 +1235,19 @@ button, input, select, textarea {
   height: 100%;
 }
 
+.leaflet-tooltip {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(15, 39, 68, 0.15);
+  padding: 4px 10px;
+  letter-spacing: 0.02em;
+}
+
 /* ===================================================================
    Photo Lightbox Modal
    =================================================================== */
