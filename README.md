@@ -67,7 +67,7 @@ Le site a été conçu pour fonctionner directement sur **GitHub Pages** (fichie
 │       ├── studio-balcon-mer.jpg
 │       ├── studio-sejour.jpg
 │       ├── studio-cuisine.jpg
-│       ├── studio-salle-eau.jpg
+│       ├── studio-lit-double.jpg
 │       ├── studio-cabine.jpg
 │       ├── appart-terrasse-mer.jpg
 │       ├── appart-cuisine-sejour.jpg

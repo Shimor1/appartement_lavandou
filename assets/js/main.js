@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { src: "assets/images/studio-sejour.jpg", caption: "Séjour lumineux avec lit gigogne 2 personnes (160cm), TV et espace repas" },
       { src: "assets/images/studio-cuisine.jpg", caption: "Kitchenette équipée avec plaques et four micro-ondes" },
       { src: "assets/images/studio-cabine.jpg", caption: "Coin cabine fermé avec lits superposés et lave-linge" },
-      { src: "assets/images/studio-salle-eau.jpg", caption: "Salle d'eau moderne avec cabine de douche et lavabo" }
+      { src: "assets/images/studio-lit-double.jpg", caption: "Salle d'eau moderne avec cabine de douche et lavabo" }
     ],
     appart: [
       { src: "assets/images/appart-terrasse-mer.jpg", caption: "Grande terrasse privative avec vue panoramique mer" },
