@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     appart: [
       { src: "assets/images/appart-terrasse-mer.jpg", caption: "Grande terrasse privative avec vue panoramique mer" },
       { src: "assets/images/appart-salon.jpg", caption: "Vaste séjour contemporain baigné de lumière" },
+      { src: "assets/images/appart-salon-canape.jpg", caption: "Espace salon avec canapé d'angle et télévision" },
       { src: "assets/images/appart-cuisine-sejour.jpg", caption: "Cuisine moderne toute équipée (four, micro-ondes, lave-vaisselle)" },
       { src: "assets/images/appart-chambre-1.jpg", caption: "Chambre 1 avec lit double grand confort" },
       { src: "assets/images/appart-chambre-2.jpg", caption: "Chambre 2 avec lit double" },
