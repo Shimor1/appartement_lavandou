@@ -9,8 +9,8 @@ Nouveau site vitrine moderne, épuré et élégant pour les locations de vacance
 - **Design Moderne & Épuré (Style Riviera Chic)** : Palette marine et sable chaud, typographie élégante (*Playfair Display* et *Plus Jakarta Sans*), micro-interactions fluides et mise en page responsive.
 - **Support Multilingue Intégré (FR / EN / NL / DE)** : Bascule instantanée entre le Français, l'Anglais, le Néerlandais et l'Allemand grâce au dictionnaire de traduction localisé (`assets/js/translations.js`), sans rechargement de page.
 - **Photos Haute Définition & Lightbox Plein Écran** : Galerie interactive avec aperçus miniatures et agrandissement plein écran (avec navigation clavier `Flèches` / `Échap` et tactile).
-- **Fiches Détaillées des 2 Types de Logements** :
-  - **Les 2 Studios Cabine Vue Mer** (Balcon, climatisation, lits superposés, lave-linge, parking privatif).
+- **Fiches Détaillées des 2 Logements** :
+  - **Le Studio Cabine Vue Mer** (Balcon, climatisation, lit gigogne 160cm, lits superposés, lave-linge, place de parking).
   - **Le Grand Appartement T3 Vue Mer** (Grande terrasse panoramique, 2 chambres doubles, cuisine tout équipée avec lave-vaisselle, climatisation, parking privatif).
 - **Prise de Contact Directe** :
   - Formulaire interactif de demande de séjour (avec génération automatique d'un email pré-rempli et bouton de copie instantanée dans le presse-papier).

@@ -283,7 +283,7 @@ ${name}`;
   if (mapElement && typeof L !== "undefined") {
     // Exact GPS coordinates
     const appartCoords = [43.132913794713275, 6.364978816277791];
-    const studiosCoords = [43.13335678677583, 6.364637039093491];
+    const studioCoords = [43.13335678677583, 6.364637039093491];
     const centerCoords = [43.133135, 6.364808];
 
     const map = L.map("map", {
@@ -308,17 +308,17 @@ ${name}`;
     `);
     markerAppart.bindTooltip("Appartement T3", { permanent: true, direction: "top", offset: [0, -10] });
 
-    // Marker 2: Studios
-    const markerStudios = L.marker(studiosCoords).addTo(map);
-    markerStudios.bindPopup(`
+    // Marker 2: Studio
+    const markerStudio = L.marker(studioCoords).addTo(map);
+    markerStudio.bindPopup(`
       <div style="font-family: var(--font-sans); font-size: 0.85rem; line-height: 1.4; padding: 4px;">
-        <strong style="color: #0f2744; font-size: 0.95rem;">Studios</strong><br>
+        <strong style="color: #0f2744; font-size: 0.95rem;">Studio</strong><br>
         Résidence Les Horizons<br>
         18 Avenue du Président Auriol<br>
         83980 Le Lavandou<br>
         <span style="color: #c29543; font-weight: 600;">🏖️ Accès direct plage</span>
       </div>
     `);
-    markerStudios.bindTooltip("Studios", { permanent: true, direction: "top", offset: [0, -10] });
+    markerStudio.bindTooltip("Studio", { permanent: true, direction: "top", offset: [0, -10] });
   }
 });
